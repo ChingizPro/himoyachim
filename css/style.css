@@ -12,12 +12,18 @@ body {
     background-color: rgba(255, 238, 255, 0.7);
     font-weight: normal;
 }
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
 img {
     max-width: 100%;
     height: auto;
 }
 select {
     margin-bottom: 0;
+}
+.container {
+    max-width: 130rem;
 }
 .flex {
     display: flex;
@@ -38,12 +44,16 @@ select {
     flex-wrap: wrap;
     column-gap: 2rem;
     padding: 0.8rem 2rem;
+    margin-bottom: 2rem;
+}
+.title {
+    font-size: 3rem;
 }
 .grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 3rem;
-    margin: 5rem 0;
+    margin-bottom: 5rem;
 }
 .grid__box {
     padding: 2rem;
@@ -51,8 +61,16 @@ select {
     background-color: white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
+.article {
+    display: block;
+    cursor: pointer;
+}
 .article__icon {
-    width: 90px;
+    font-size: 30px;
+    margin-bottom: 1rem;
+}
+.article__title {
+    font-size: 2.4rem;
 }
 .footer {
     background-color: white;
@@ -69,7 +87,9 @@ select {
     margin-right: 1rem;
     font-size: 2rem;
 }
-
+.flexfooter {
+    column-gap: 2rem;
+}
 
 @media screen and (min-width: 850px) {
     .grid {
@@ -79,7 +99,7 @@ select {
         width: 31%;
     }
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1200px) {
     .grid {
         grid-template-columns: 1fr 1fr 1fr;
     }
